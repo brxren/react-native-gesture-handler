@@ -5,7 +5,7 @@ sidebar_label: Handler State
 ---
 
 As described in ["About Gesture Handlers"](about-handlers.md) section gesture handlers can be treated as ["state machines"](https://en.wikipedia.org/wiki/Finite-state_machine).
-Each handler instance at any given time has an assigned state that can change when new touch events arrive or can be forced by the touch system to change it state in certain circumstances.
+Each handler instance at any given time has an assigned state that can change when new touch events arrive or can be forced by the touch system to change its state in certain circumstances.
 
 There are six possible states for the handler:
  - [UNDETERMINED](#undetermined)
@@ -21,7 +21,7 @@ Each state has its own section underneath describing the details.
 
 We can monitor handler's state changes using [`onHandlerStateChange`](handler-common.md#onhandlerstatechange) callback and accessed from [`state`](handler-common.md#state) attribute of the event.
 
-The [`state`](handler-common.md#state) as provided in the event attribute can be matched agains one of the constants exported under `State` object (see the example below).
+The [`state`](handler-common.md#state) as provided in the event attribute can be matched against one of the constants exported under `State` object (see the example below).
 The constants corresponds
 
 ```
